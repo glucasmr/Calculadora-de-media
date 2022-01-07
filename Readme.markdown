@@ -1,4 +1,4 @@
-Readme.md
+Calculadora de média
 --------------------
 
 Calcule quanto você precisa para passar em um sistema de notas com prova de reposição e prova final!
