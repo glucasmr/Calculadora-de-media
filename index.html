@@ -1,0 +1,41 @@
+<html>
+
+<head>
+	<title> Calculadora de média e Conversor de Temperatura</title>
+</head>
+
+<body>
+	<div class="container">
+		<h1 class="page-title">
+			Calculadora de média </h1>
+		<p class="page-subtitle">
+			Calcule quanto você precisa para passar em um sistema de notas com prova de reposição e prova final!
+			<br>Se necessário, a nota de reposição substitui a menor nota. Se necessário, a nota final necessária para aprovação é a nova média menos 12 pontos.
+		</p>
+	</div>
+	<div class="container">
+		<form>
+			<label for="nome" class="page-subtitle">Nome:</label>
+			<input type="text" id="nome" placeholder="Digite seu nome" /><br><br>
+			<label for="notaProva1" class="page-subtitle">Nota 1:</label>
+			<input type="number" value="0" min="0" max="10" step="0.5" id="notaProva1" /><br><br>
+			<label for="notaProva2" class="page-subtitle">Nota 2:</label>
+			<input type="number" value="0" min="0" max="10" step="0.5" id="notaProva2" /><br><br>
+			<label for="notaProva3" class="page-subtitle">Nota 3:</label>
+			<input type="number" value="0" min="0" max="10" step="0.5" id="notaProva3" /><br><br>
+			<p class="page-subtitle" id="reposicao"></p>
+			<p class="page-subtitle" id="mediaReposicao"></p>
+			<p class="page-subtitle" id="resultadoReposicaoFinal"></p>
+			<p class="page-subtitle" id="notaFinal"></p>
+			<button type="button" class="botao1" id="botao1" onClick="funcMedia(nome.value,notaProva1.value,notaProva2.value, notaProva3.value)">Calcular nota</button>
+			<p class="page-subtitle" id="resultadoReposicaoAprovado"></p>
+			<p class="page-subtitle" id="aprovado"></p>
+
+			<p class="page-subtitle" id="resultadoFinal"></p>
+
+		</form>
+
+	</div>
+</body>
+
+</html>
